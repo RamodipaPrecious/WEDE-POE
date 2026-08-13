@@ -1,0 +1,385 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Page metadata -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Contact The Beauty Clinic for information about hair and nail services.">
+
+    <title>Contact Us | The Beauty Clinic</title>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+<img src="images/logo.webp"
+             alt="The Beauty Clinic Logo"
+             width="150"
+             height="150"
+             style="border-radius: 50%;">
+
+        <h1>The Beauty Clinic</h1>
+
+        <p>Professional Hair and Nail Care</p>
+
+
+        <!-- Main navigation -->
+
+        <nav aria-label="Main Navigation">
+
+            <ul>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+
+                <li>
+                    <a href="services.html">Services</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main>
+
+        <!-- CONTACT INTRODUCTION -->
+
+        <section>
+
+            <h2>Contact The Beauty Clinic</h2>
+
+            <p>
+                We are happy to answer questions about our
+                hair and nail services, prices and salon
+                availability.
+            </p>
+
+            <p>
+                You can contact us by telephone, email or by
+                completing the enquiry form below.
+            </p>
+
+        </section>
+
+
+        <!-- CONTACT DETAILS -->
+
+        <section>
+
+            <h2>Our Contact Details</h2>
+
+            <address>
+
+                <p>
+                    <strong>The Beauty Clinic</strong>
+                </p>
+
+                <p>
+                    55 Agaat street
+                    <br>
+                    Rainbow Park
+                    <br>
+                    Polokwane
+                    <br>
+                    Limpopo
+                </p>
+
+                <p>
+                    <strong>Phone:</strong>
+
+                    <a href="tel:+27691386923">
+                        +27 69 138 6923
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+
+                    <a href="preciousramodipa19@gmail.com">
+                        preciousramodipa19@gmail.com
+                    </a>
+                </p>
+
+            </address>
+
+        </section>
+
+
+        <!-- OPENING HOURS -->
+
+        <section>
+
+            <h2>Opening Hours</h2>
+
+            <!--
+                TABLE:
+                Used to display structured opening-hour information.
+            -->
+
+            <table border="1">
+
+                <caption>
+                    The Beauty Clinic Opening Hours
+                </caption>
+
+                <thead>
+
+                    <tr>
+
+                        <th scope="col">
+                            Day
+                        </th>
+
+                        <th scope="col">
+                            Opening Hours
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Monday</td>
+                        <td>09:00 - 17:00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>09:00 - 17:00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>09:00 - 17:00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Thursday</td>
+                        <td>09:00 - 18:00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Friday</td>
+                        <td>09:00 - 18:00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Saturday</td>
+                        <td>09:00 - 15:00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sunday</td>
+                        <td>Closed</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- CONTACT FORM -->
+
+        <section>
+
+            <h2>Send Us a Message</h2>
+
+            <!--
+                FORM:
+                Allows visitors to send an enquiry to the salon.
+            -->
+
+            <form action="#" method="post">
+
+                <fieldset>
+
+                    <legend>Contact Information</legend>
+
+                    <p>
+
+                        <label for="name">
+                            Name:
+                        </label>
+
+                        <br>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required>
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="email">
+                            Email Address:
+                        </label>
+
+                        <br>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required>
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="phone">
+                            Phone Number:
+                        </label>
+
+                        <br>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone">
+
+                    </p>
+
+                </fieldset>
+
+
+                <fieldset>
+
+                    <legend>Your Enquiry</legend>
+
+                    <p>
+
+                        <label for="subject">
+                            Subject:
+                        </label>
+
+                        <br>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            required>
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="message">
+                            Message:
+                        </label>
+
+                        <br>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="8"
+                            cols="50"
+                            required></textarea>
+
+                    </p>
+
+                </fieldset>
+
+
+                <!-- Form buttons -->
+
+                <p>
+
+                    <button type="submit">
+                        Send Message
+                    </button>
+
+                    <button type="reset">
+                        Clear Form
+                    </button>
+
+                </p>
+
+            </form>
+
+        </section>
+
+       
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h2>The Beauty Clinic</h2>
+
+        <p>
+            Professional hair and nail care with a personal touch.
+        </p>
+
+        <nav aria-label="Footer Navigation">
+
+            <ul>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+
+                <li>
+                    <a href="services.html">Services</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <p>
+            &copy; 2026 The Beauty Clinic.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
+```
