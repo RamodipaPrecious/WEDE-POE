@@ -1,0 +1,136 @@
+
+/* =========================================
+   THE BEAUTY CLINIC
+   Main Stylesheet
+   ========================================= */
+
+
+/* =========================================
+   1. CSS RESET
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================
+   2. BASE STYLES
+   ========================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: 0.02rem;
+    color: #333333;
+    background-color: #fff8fb;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* =========================================
+   3. HEADER
+   ========================================= */
+
+.site-header {
+    background-color: #874949;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    border-bottom: 1px solid #a31450;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-area img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.logo-area h1 {
+    font-size: 1.7rem;
+}
+
+
+/* =========================================
+   4. NAVIGATION
+   ========================================= */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+nav a:hover {
+    color: #96335a;
+}
+
+nav a:focus {
+    outline: 2px solid #a64d70;
+    outline-offset: 0.2rem;
+}
+
+nav a:active {
+    color: #722f4c;
+}
+
+
