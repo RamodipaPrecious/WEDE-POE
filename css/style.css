@@ -74,7 +74,7 @@ img {
    ========================================= */
 
 .site-header {
-    background-color: #874949;
+    background-color: #c8bcbc;
     padding: 1rem 5%;
     display: flex;
     justify-content: space-between;
@@ -134,3 +134,91 @@ nav a:active {
 }
 
 
+/* =========================================
+   5. Hero Section
+   ========================================= */
+    .hero {
+        min-height: 70vh;
+        padding: 4rem 8%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 3rem;
+        background-color: #3c2931;
+
+    }
+    .hero-content h2 { 
+        font-size: 3rem; 
+        margin-bottom: 1.5rem;
+     }
+
+     .hero-content p { 
+        font-size: 1.15rem; 
+        line-height: 1.8;
+         max-width: 35rem; 
+        } 
+
+        .hero-image img { 
+            width: 100%; 
+            border-radius: 1rem; 
+        }
+
+        /* ============================
+        BUTTON
+         ============================= */
+
+    .button { 
+        display: inline-block;
+         background-color: #a64d70; 
+         color: #ffffff; text-decoration: none; 
+         padding: 0.8rem 1.5rem; 
+         border-radius: 0.5rem;
+          font-weight: 600; 
+          margin-top: 1rem; 
+        }
+
+        .button:hover { 
+            background-color: #833a59; 
+        }
+
+         .button:focus {
+             outline: 3px solid #333333; 
+             outline-offset: 0.2rem;
+          } 
+
+             .button:active { 
+                transform: scale(0.98);
+       }
+
+/* =========================================
+   6. Introduction
+   ========================================= */
+
+   .intro {
+    text-align: center;
+    padding: 4rem 10%;
+    }
+
+    .intro p{
+        max-width: 45rem;
+            margin-left: auto;
+            margin-right: auto;
+    }
+
+    /* ========================
+    7.INTRODUCTION
+    ===========================*/
+
+    .intro {
+        text-align: center;
+        padding: 4rem 10%;
+    }
+
+    .intro p {
+        max-width: 45rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    
