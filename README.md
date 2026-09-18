@@ -215,3 +215,9 @@ The logo can be displayed as a circular image using:
 
 ```html
 style="border-radius: 50%;"
+
+
+9. CSS
+
+A stlye.css is added and libked thorught the entire browers.
+```
