@@ -1,3 +1,4 @@
+
 # CHANGELOG
 
 ## Version 1.0.0
@@ -125,9 +126,184 @@ The logo uses an `<img>` element and alternative text.
 A circular design can be created using:
 
 
-**CSS**
+# Version 2.0.0
 
-A CSS sheet was added and linked  through out the browers.
+**Date:** 18 September 2026
+
+### CSS Styling and Responsive Design - Part 2
+
+The website was updated from the HTML-only version by introducing CSS styling and responsive design.
+
+### CSS Styling Added
+
+A shared stylesheet was created:
+
+`<span>css/style.css</span>`
+
+The stylesheet was linked to all four HTML pages.
+
+The following styling was added:
+
+* CSS reset
+* Default font family
+* Font sizes
+* Font weights
+* Line height
+* Letter spacing
+* Colour scheme
+* Margins and padding
+* Borders
+* Rounded corners
+* Box shadows
+* Navigation styling
+* Button styling
+* Form styling
+* Table styling
+* Footer styling
+* Image styling
+
+### Layout Improvements
+
+Modern CSS layout techniques were introduced to improve the organisation of website content.
+
+The following were implemented:
+
+* Flexbox
+* CSS Grid
+* Flexible widths
+* Multi-column layouts
+* Single-column layouts for smaller screens
+* Improved spacing and alignment
+
+### Navigation Improvements
+
+The navigation menu was styled to provide a consistent appearance across the website.
+
+Interactive states were added using:
+
+* `<span>:hover</span>`
+* `<span>:focus</span>`
+* `<span>:active</span>`
+
+The navigation layout was also adjusted for smaller screens.
+
+### Service Page Improvements
+
+The Services page was visually improved by:
+
+* Styling the hairstyle sections
+* Styling the nail sections
+* Creating service cards
+* Improving spacing between services
+* Styling service prices
+* Adding image styling
+* Adding hover effects
+
+### Contact Page Improvements
+
+The Contact page was improved by:
+
+* Styling the contact information
+* Making the Google Maps iframe responsive
+* Styling the opening-hours table
+* Styling the enquiry form
+* Styling form fields
+* Styling submit and reset buttons
+* Adding focus states to form controls
+
+### Responsive Design
+
+Media queries were added to make the website responsive.
+
+The website was tested at:
+
+* Desktop screen sizes
+* Tablet screen sizes
+* Mobile screen sizes
+
+The layout changes depending on the available screen width.
+
+On smaller screens, multi-column content changes to a single-column layout where necessary.
+
+### Responsive Units
+
+Relative CSS units were used to improve flexibility.
+
+These include:
+
+* `<span>rem</span>`
+* `<span>em</span>`
+* `<span>%</span>`
+
+### Responsive Images
+
+Images were styled so that they can resize within their containers and remain suitable for different screen sizes.
+
+The website was tested using Microsoft Edge Developer Tools at different device sizes.
+
+### Testing
+
+The website was tested on:
+
+* Desktop view
+* Tablet view
+* Mobile view
+
+The following were checked:
+
+* Navigation
+* Logo
+* Text
+* Images
+* Service cards
+* Contact form
+* Opening-hours table
+* Buttons
+* Overall page layout
+
+The website displayed correctly across the tested screen sizes.
+
+### Corrections and Improvements
+
+The following corrections were also made:
+
+* Email links were corrected to use the `<span>mailto:</span>` format.
+* Inline table borders were removed so that the table could be styled using CSS.
+* Website spacing and alignment were improved.
+* Website pages were given a consistent visual design.
+* Responsive behaviour was tested and adjusted.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
