@@ -213,11 +213,275 @@ The image includes alternative text using the `alt` attribute to improve accessi
 
 The logo can be displayed as a circular image using:
 
-```html
-style="border-radius: 50%;"
+---
 
+## 9. CSS Styling - Part 2
 
-9. CSS
+For Part 2 of the project, CSS was introduced to improve the visual appearance, layout and usability of The Beauty Clinic website.
 
-A stlye.css is added and libked thorught the entire browers.
+A separate CSS file was created:
+
+`css/style.css`
+
+The CSS file is linked to all four HTML pages so that the website has a consistent design.
+
+The CSS styling includes:
+
+* A CSS reset
+* A default font family
+* Font sizes
+* Font weights
+* Line height
+* Letter spacing
+* Background colours
+* Text colours
+* Margins and padding
+* Borders
+* Border radius
+* Box shadows
+* Button styling
+* Navigation styling
+* Image styling
+* Form styling
+* Table styling
+* Footer styling
+
+---
+
+## 10. Typography
+
+Typography was added to make the website easier to read and to create a consistent visual appearance.
+
+The CSS uses properties such as:
+
+* `font-family`
+* `font-size`
+* `font-weight`
+* `line-height`
+* `letter-spacing`
+
+Relative units such as `rem` are used for font sizes and spacing where appropriate.
+
+Different heading sizes are used to create a clear hierarchy between the main headings, section headings and normal paragraph text.
+
+---
+
+## 11. Layout and CSS Techniques
+
+The website uses modern CSS layout techniques to organise the content.
+
+### Flexbox
+
+Flexbox is used for elements such as the navigation menu and other areas where content needs to be arranged horizontally or vertically.
+
+The following properties are used where appropriate:
+
+* `display: flex`
+* `flex-direction`
+* `justify-content`
+* `align-items`
+* `gap`
+
+### CSS Grid
+
+CSS Grid is used to arrange service cards and other content into columns.
+
+The number of columns changes depending on the available screen size.
+
+This allows the website to display multiple service items on larger screens while allowing the content to stack on smaller screens.
+
+---
+
+## 12. Visual Styling
+
+CSS visual styling was added throughout the website to create a consistent salon-themed appearance.
+
+The styling includes:
+
+* Background colours
+* Text colours
+* Borders
+* Rounded corners
+* Box shadows
+* Spacing between sections
+* Styled navigation links
+* Styled buttons
+* Styled service cards
+* Responsive images
+
+Interactive states were also added using:
+
+* `:hover`
+* `:focus`
+* `:active`
+
+These states provide visual feedback when users interact with navigation links and buttons.
+
+---
+
+## 13. Responsive Web Design
+
+The website was designed to work on different screen sizes, including desktop computers, tablets and mobile phones.
+
+CSS media queries were used to modify the layout depending on the screen width.
+
+### Desktop
+
+On larger screens, content can be displayed in multiple columns where appropriate.
+
+### Tablet
+
+On tablet-sized screens, the number of columns is reduced so that the content remains readable and well organised.
+
+### Mobile
+
+On smaller screens, content is changed to a single-column layout where necessary.
+
+The navigation menu is also adjusted for smaller screens.
+
+The responsive design helps prevent content from becoming too small or extending outside the screen.
+
+---
+
+## 14. Responsive Units
+
+Relative CSS units were used to make the website more flexible.
+
+The website uses:
+
+* `rem` for typography and spacing
+* `%` for flexible widths
+* `em` where appropriate
+
+Using relative units allows elements to adapt better to different screen sizes.
+
+---
+
+## 15. Responsive Images
+
+Images were styled so that they can resize within their containers without causing horizontal scrolling.
+
+Responsive image techniques were considered when testing the website at different screen sizes.
+
+The images were tested using the browser's developer tools at desktop, tablet and mobile dimensions.
+
+---
+
+## 16. Responsive Testing
+
+The website was tested using Microsoft Edge and the browser's Developer Tools.
+
+The responsive design was tested at different device sizes, including:
+
+* Desktop view
+* Tablet view
+* Mobile view
+
+The following aspects were checked:
+
+* Navigation
+* Logo
+* Text
+* Service cards
+* Images
+* Contact form
+* Tables
+* Buttons
+* Overall page layout
+
+The website remained usable and readable across the tested screen sizes.
+
+Screenshots were taken during the responsive testing process as evidence of the different layouts.
+
+---
+
+## 17. Accessibility
+
+Accessibility was considered during the development of the website.
+
+The website includes:
+
+* Alternative text for images
+* Semantic HTML5 elements
+* Labels for form controls
+* Clear headings
+* Readable text
+* Visible focus states for interactive elements
+
+These features help make the website easier for users to understand and navigate.
+
+---
+
+## 18. Part 2 Improvements
+
+The following improvements were made during Part 2:
+
+* Added a complete CSS stylesheet.
+* Added a CSS reset.
+* Added consistent typography.
+* Added a consistent colour scheme.
+* Improved spacing and alignment.
+* Added Flexbox layouts.
+* Added CSS Grid layouts.
+* Added service card styling.
+* Added navigation styling.
+* Added hover effects.
+* Added focus and active states.
+* Added responsive layouts.
+* Added mobile and tablet media queries.
+* Improved image responsiveness.
+* Improved contact form styling.
+* Improved table styling.
+* Improved footer styling.
+* Tested the website on desktop, tablet and mobile screen sizes.
+* Corrected the email links so that they use the `mailto:` format.
+* Removed inline table borders so that the table can be styled using CSS.
+
+---
+
+## 19. Project Structure
+
+The current project structure is:
+
+```text
+The Beauty Clinic/
+│
+├── index.html
+├── about.html
+├── services.html
+├── contact.html
+│
+├── css/
+│   └── style.css
+│
+├── images/
+│   ├── logo.webp
+│   ├── hair1.webp
+│   ├── hair2.webp
+│   ├── nail1.webp
+│   ├── nail1.jpg
+│   └── nail2.webp
+│
+├── README.md
+├── CHANGELOG.md
+└── REFERENCE.md
 ```
+
+---
+
+## 20. Part 2 Testing Summary
+
+The Beauty Clinic website was tested across desktop, tablet and mobile screen sizes.
+
+The testing confirmed that:
+
+* The pages load correctly.
+* Navigation links work.
+* Images display correctly.
+* Service information remains readable.
+* The layout adapts to smaller screens.
+* Content does not extend unnecessarily outside the screen.
+* Forms and buttons remain usable.
+* The website maintains a consistent appearance across the pages.
+
+---
