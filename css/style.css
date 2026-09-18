@@ -1,13 +1,13 @@
 
-/* =========================================
+/* =========================================================
    THE BEAUTY CLINIC
-   Main Stylesheet
-   ========================================= */
+   PART 2 - COMPLETE RESPONSIVE STYLESHEET
+   ========================================================= */
 
 
-/* =========================================
+/* =========================================================
    1. CSS RESET
-   ========================================= */
+   ========================================================= */
 
 * {
     margin: 0;
@@ -22,13 +22,12 @@ html {
 
 body {
     margin: 0;
-    padding: 0;
 }
 
 
-/* =========================================
-   2. BASE STYLES
-   ========================================= */
+/* =========================================================
+   2. BASE STYLE
+   ========================================================= */
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -41,12 +40,13 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     line-height: 1.2;
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 h2 {
@@ -55,11 +55,21 @@ h2 {
 }
 
 h3 {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+    margin: 1rem 0 0.5rem;
 }
 
 p {
     margin-bottom: 1rem;
+}
+
+a {
+    color: #a64d70;
 }
 
 img {
@@ -69,412 +79,816 @@ img {
 }
 
 
-/* =========================================
+/* =========================================================
    3. HEADER
-   ========================================= */
+   ========================================================= */
 
-.site-header {
-    background-color: #c8bcbc;
-    padding: 1rem 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    border-bottom: 1px solid #a31450;
+header {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 2rem 5%;
+    border-bottom: 0.2rem solid #e8b8ca;
+    box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.08);
 }
 
-.logo-area {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
 
-.logo-area img {
-    width: 4rem;
-    height: 4rem;
+/* Salon logo */
+
+header > img {
+    width: 9rem;
+    height: 9rem;
     object-fit: cover;
+    margin: 0 auto 1rem;
     border-radius: 50%;
-}
-
-.logo-area h1 {
-    font-size: 1.7rem;
+    border: 0.3rem solid #e8b8ca;
 }
 
 
-/* =========================================
+/* Salon name */
+
+header h1 {
+    color: #8f3f60;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.3rem;
+    letter-spacing: 0.08rem;
+    margin-bottom: 0.4rem;
+}
+
+
+/* Tagline */
+
+header > p {
+    color: #666666;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+
+/* =========================================================
    4. NAVIGATION
-   ========================================= */
+   ========================================================= */
 
-nav ul {
+header nav {
+    margin-top: 1.5rem;
+}
+
+header nav ul,
+footer nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-nav a {
-    color: #333333;
+header nav a,
+footer nav a {
+    display: inline-block;
     text-decoration: none;
     font-weight: 600;
-    padding: 0.5rem;
-}
-
-nav a:hover {
-    color: #96335a;
-}
-
-nav a:focus {
-    outline: 2px solid #a64d70;
-    outline-offset: 0.2rem;
-}
-
-nav a:active {
-    color: #722f4c;
+    padding: 0.7rem 1.2rem;
+    border-radius: 2rem;
+    transition: all 0.3s ease;
 }
 
 
-/* =========================================
-   5. Hero Section
-   ========================================= */
-    .hero {
-        min-height: 70vh;
-        padding: 4rem 8%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        gap: 3rem;
-        background-color: #3c2931;
+/* Header navigation */
 
-    }
-    .hero-content h2 { 
-        font-size: 3rem; 
-        margin-bottom: 1.5rem;
-     }
+header nav a {
+    color: #8f3f60;
+    background-color: #fff0f5;
+}
 
-     .hero-content p { 
-        font-size: 1.15rem; 
-        line-height: 1.8;
-         max-width: 35rem; 
-        } 
+header nav a:hover {
+    color: #ffffff;
+    background-color: #a64d70;
+    transform: translateY(-0.15rem);
+}
 
-        .hero-image img { 
-            width: 100%; 
-            border-radius: 1rem; 
-        }
+header nav a:focus {
+    outline: 0.15rem solid #333333;
+    outline-offset: 0.15rem;
+}
 
-        /* ============================
-        6.BUTTON
-         ============================= */
+header nav a:active {
+    transform: scale(0.95);
+}
 
-    .button { 
-        display: inline-block;
-         background-color: #a64d70; 
-         color: #ffffff; text-decoration: none; 
-         padding: 0.8rem 1.5rem; 
-         border-radius: 0.5rem;
-          font-weight: 600; 
-          margin-top: 1rem; 
-        }
 
-        .button:hover { 
-            background-color: #833a59; 
-        }
+/* =========================================================
+   5. MAIN CONTENT
+   ========================================================= */
 
-         .button:focus {
-             outline: 3px solid #333333; 
-             outline-offset: 0.2rem;
-          } 
+main {
+    width: 90%;
+    max-width: 75rem;
+    margin: 0 auto;
+}
 
-             .button:active { 
-                transform: scale(0.98);
-       }
 
-/* =========================================
-   7.. Introduction
-   ========================================= */
+/* General sections */
 
-   .intro {
+main > section {
+    margin: 3rem 0;
+    padding: 3rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.07);
+}
+
+
+/* =========================================================
+   6. HOME PAGE HERO
+   ========================================================= */
+
+main > section:first-child {
+    background-color: #f9e5ee;
     text-align: center;
-    padding: 4rem 10%;
-    }
-
-    .intro p{
-        max-width: 45rem;
-            margin-left: auto;
-            margin-right: auto;
-    }
-
-   /* =========================================
-   8. Services
-   ========================================= */
-
-   .home-services {
-    padding: 4rem 8%;
-    
-   }
-
-   .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-   }
-
-   .home-services > h2{
-    text-align: center;
-   }
-.services-card img {
-    width: 100%;
-    height: 15rem;
-    object-fit: cover;
-    border-radius: 0.7rem;
-    margin-bottom: 1rem;
+    padding: 5rem 10%;
+    border-radius: 0 0 1.5rem 1.5rem;
 }
 
-services-card a:hover {
+main > section:first-child h2 {
+    color: #8f3f60;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.8rem;
+    letter-spacing: 0.04rem;
+}
+
+main > section:first-child p {
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1rem;
+}
+
+
+/* =========================================================
+   7. MAIN LINKS
+   ========================================================= */
+
+main a {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+main a:hover {
     text-decoration: underline;
 }
 
-/* =========================================
-   9. Footer
-   ========================================= */
+main a:focus {
+    outline: 0.15rem solid #a64d70;
+    outline-offset: 0.15rem;
+}
 
-   footer {
-    background-color: #333333;
+
+/* =========================================================
+   8. HOME PAGE SERVICE CARDS
+   ========================================================= */
+
+main > section:nth-child(3) {
+    background-color: #fff8fb;
+    box-shadow: none;
+    padding: 3rem 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+main > section:nth-child(3) > h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #8f3f60;
+}
+
+main > section:nth-child(3) > article {
+    background-color: #ffffff;
+    padding: 2rem;
+    border: 0.1rem solid #e8b8ca;
+    border-radius: 1rem;
+    box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main > section:nth-child(3) > article:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.12);
+}
+
+main > section:nth-child(3) > article h3 {
+    color: #8f3f60;
+}
+
+
+/* =========================================================
+   9. WHY CHOOSE US
+   ========================================================= */
+
+main > section:nth-child(4) {
+    background-color: #f9e5ee;
+}
+
+main > section:nth-child(4) h2 {
+    color: #8f3f60;
+}
+
+main > section:nth-child(4) ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+main > section:nth-child(4) li {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-left: 0.3rem solid #a64d70;
+    border-radius: 0.5rem;
+}
+
+
+/* =========================================================
+   10. SERVICES PAGE
+   ========================================================= */
+
+
+/* Services sections */
+
+#hairstyles,
+#nails,
+#extras {
+    background-color: #fff8fb;
+}
+
+
+/* Section headings */
+
+#hairstyles h2,
+#nails h2,
+#extras h2 {
+    text-align: center;
+    color: #8f3f60;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* Section images */
+
+#hairstyles > img,
+#nails > img,
+#extras > img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    border: 0.25rem solid #e8b8ca;
+}
+
+
+/* Hair and nail article grids */
+
+#hairstyles,
+#nails {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+#hairstyles h2,
+#nails h2 {
+    grid-column: 1 / -1;
+}
+
+
+/* Service cards */
+
+#hairstyles article,
+#nails article {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border: 0.1rem solid #e8b8ca;
+    border-radius: 1rem;
+    box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease;
+}
+
+#hairstyles article:hover,
+#nails article:hover {
+    transform: translateY(-0.4rem);
+}
+
+#hairstyles article h3,
+#nails article h3 {
+    color: #8f3f60;
+}
+
+
+/* Price emphasis */
+
+#hairstyles strong,
+#nails strong,
+#extras strong {
+    color: #a64d70;
+    font-weight: 700;
+}
+
+
+/* Service lists */
+
+#nails ul,
+#extras ul {
+    list-style-position: inside;
+}
+
+#nails li,
+#extras li {
+    margin-bottom: 0.5rem;
+}
+
+
+/* Extras */
+
+#extras {
+    text-align: center;
+}
+
+#extras ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+#extras li {
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    border: 0.1rem solid #e8b8ca;
+    border-radius: 0.7rem;
+}
+
+
+/* =========================================================
+   11. ASIDE
+   ========================================================= */
+
+aside {
+    margin: 3rem 0;
+    padding: 2rem;
+    background-color: #f9e5ee;
+    border-left: 0.4rem solid #a64d70;
+    border-radius: 0.5rem;
+}
+
+aside h2 {
+    color: #8f3f60;
+}
+
+
+/* =========================================================
+   12. CONTACT PAGE
+   ========================================================= */
+
+
+/* Google map */
+
+iframe {
+    width: 100%;
+    max-width: 100%;
+    min-height: 25rem;
+    border: 0;
+    border-radius: 0.8rem;
+}
+
+
+/* Address */
+
+address {
+    font-style: normal;
+    line-height: 1.8;
+}
+
+address a {
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   13. TABLE
+   ========================================================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    background-color: #ffffff;
+}
+
+caption {
+    caption-side: top;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #8f3f60;
+    margin-bottom: 1rem;
+}
+
+th,
+td {
+    padding: 1rem;
+    border: 0.1rem solid #e8b8ca;
+    text-align: left;
+}
+
+th {
+    background-color: #f9e5ee;
+    color: #8f3f60;
+    font-weight: 700;
+}
+
+tr:hover {
+    background-color: #fff0f5;
+}
+
+
+/* =========================================================
+   14. CONTACT FORM
+   ========================================================= */
+
+form {
+    width: 100%;
+}
+
+fieldset {
+    border: 0.1rem solid #e8b8ca;
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+legend {
+    padding: 0 0.5rem;
+    color: #8f3f60;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+label {
+    font-weight: 600;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.4rem;
+    border: 0.1rem solid #cccccc;
+    border-radius: 0.4rem;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: 0.15rem solid #a64d70;
+    border-color: #a64d70;
+}
+
+
+/* =========================================================
+   15. FORM BUTTONS
+   ========================================================= */
+
+button {
+    border: none;
+    background-color: #a64d70;
+    color: #ffffff;
+    padding: 0.8rem 1.5rem;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #833a59;
+}
+
+button:focus {
+    outline: 0.2rem solid #333333;
+    outline-offset: 0.15rem;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+
+/* =========================================================
+   16. FOOTER
+   ========================================================= */
+
+footer {
+    background-color: #3d2932;
     color: #ffffff;
     text-align: center;
-    padding: 2rem;
-    margin-top: 3rem;
-   }
+    padding: 3rem 5%;
+    margin-top: 4rem;
+}
 
-   footer p {
-    margin-bottom: 0;
-   }
+footer h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #f4c9d8;
+}
 
-   /* =========================================
-   10. FORM
-    ========================================= */
-
-    form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    label {
-        font-weight: 600;
-        margin-bottom: 0.4rem;
-    }
-
-    input,
-    textarea {
-        width: 100%;
-        padding: 0.8rem;
-        margin-bottom: 1rem;
-        border: 1px solid #cccccc;
-        border-radius: 0.3rem;
-        font-size: 1rem;
-    }
-
-    input:focus,
-    textarea:focus {
-        outline: 2px solid #a64d70;
-        border-color: #a64d70;
-    }
-
-    button {
-        border: none;
-        background-color: #a64d70;
-        color: #ffffff;
-        padding: 0.8rem 1.5rem;
-        border-radius: 0.5rem;
-        font-size: 1rem;
-        font-weight: 600;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    button:hover {
-        background-color: #833a59;
-    }
-
-    button:focus {
-        outline: 3px solid #333333;
-    }
-
-    button:active {
-        transform: scale(0.98);
-    }
-
-    /* =========================================
-   11. Contact Page
-    ========================================= */
-
- .contact-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    padding: 4rem 8%;
- }
-
- .contact-information,
- .contact-form {
-    background-color: #ffffff;
-    padding: 2rem;
-    border-radius: 1rem;
-    box-shadow: 0 0.3rem 6rem rgba(0, 0, 0, 0.07);
-    border: 1px solid #ead4dd;
- }
-
- /*=========================================
- 12.SERVICES PRICE SECTION
- =========================================*/
-
- .price-section {
-    padding: 4rem 8%;
- }
-
- .price-section h2 {
-    text-align: center;
- }
-
- .price-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
- }
-
- .price-card {
-    background-color: #ffffff;
-    padding: 2rem;
-    border-radius: 1rem;
-    box-shadow: 0 0.3rem 6rem rgba(0, 0, 0, 0.07);
-    border: 1px solid #ead4dd;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
- }
-
- .price-card:hover {
-    transform: translateY(-0.5rem);
- }
-
- .price-card h3 {
+footer p {
     margin-bottom: 1rem;
- }
+}
 
- .price-card p {
-   color: #a64d70;
-   font-size: 1.1rem;
-   font-weight: bold;
-   margin-bottom: 0;
- }
+footer a {
+    color: #f4c9d8;
+}
 
-/* =========================================
-   13. PAGE HEADINGS
-   ========================================= */
+footer nav {
+    margin: 1.5rem 0;
+}
 
-   .page-heading {
-    text-align: center;
-    padding: 4rem 8%;
-    background-color: #f9e8ef;
-   }
-    .page-heading p {
-        margin-bottom: 0;
+footer nav a {
+    color: #ffffff;
+    background-color: #60414e;
+}
+
+footer nav a:hover {
+    background-color: #a64d70;
+    color: #ffffff;
+}
+
+footer nav a:focus {
+    outline: 0.15rem solid #ffffff;
+}
+
+
+/* =========================================================
+   17. TABLET RESPONSIVENESS
+   601px - 900px
+   ========================================================= */
+
+@media screen and (max-width: 900px) {
+
+    body {
+        font-size: 0.98rem;
     }
 
-    /* =========================================
-   14. ABOUT PAGE
-   ========================================= */
-  .about-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    padding: 4rem 8%;
-    align-items: center;
-  } 
-
-  .about-image img {
-    width: 100%;
-    border-radius: 1rem;
-  }
-
-  .about-content p{
-    line-height: 1.8;
-  }
-
-  /*=============== 15.TABLE RESPONSIVENESS==========*/
-
-  @media screen and (max-width: 900px) {
-    
-    .site-header{
-        flex-direction: column;
-        text-align: center;
+    header {
+        padding: 1.5rem 4%;
     }
-    .hero {
-        grid-template-columns: 1fr;
-        text-align: center;
-        padding: 4rem 10%;
+
+    header h1 {
+        font-size: 2rem;
     }
-    .hero-content p{
-        margin-left: auto;
-        margin-right: auto;
+
+    main {
+        width: 94%;
     }
-    .about-section {
-        grid-template-columns: 1fr;
+
+    main > section:first-child {
+        padding: 4rem 6%;
     }
-    .contact-container {
+
+    main > section:first-child h2 {
+        font-size: 2.3rem;
+    }
+
+
+    /* Home service cards */
+
+    main > section:nth-child(3) {
         grid-template-columns: repeat(2, 1fr);
     }
-  }
 
-  /*=========================
-  16. MOBILE RESPONSIVENESS 
-   =========================*/
 
-   @media screen and (max-width: 600px) {
+    /* Hair and nail cards */
+
+    #hairstyles,
+    #nails {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* Google map */
+
+    iframe {
+        min-height: 22rem;
+    }
+}
+
+
+/* =========================================================
+   18. MOBILE RESPONSIVENESS
+   Maximum 600px
+   ========================================================= */
+
+@media screen and (max-width: 600px) {
+
     body {
         font-size: 0.95rem;
     }
-    .site-header {
-        padding: 1rem;
+
+
+    /* Header */
+
+    header {
+        padding: 1.5rem 1rem;
     }
-    .logo-area{
+
+    header > img {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    header > p {
+        font-size: 1rem;
+    }
+
+
+    /* Navigation */
+
+    header nav ul,
+    footer nav ul {
         flex-direction: column;
         gap: 0.5rem;
     }
 
-    nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    .hero{
-        padding: 3rem 1.5rem;
+    header nav a,
+    footer nav a {
+        width: 12rem;
+        text-align: center;
     }
 
-    .hero-content h2 {
-        font-size: 2.5rem;
+
+    /* Main */
+
+    main {
+        width: 94%;
     }
 
-    .intro,
-    .home-services,
-    .price-section,
-    .about-section,
-    .contact-container {
-        padding: 2.5rem 1.2rem;
+    main > section {
+        margin: 1.5rem 0;
+        padding: 2rem 1.2rem;
     }
 
-    .services-grid{
+
+    /* Hero */
+
+    main > section:first-child {
+        padding: 3rem 1.2rem;
+    }
+
+    main > section:first-child h2 {
+        font-size: 2rem;
+    }
+
+    main > section:first-child p {
+        font-size: 1rem;
+    }
+
+
+    /* Home services */
+
+    main > section:nth-child(3) {
+        grid-template-columns: 1fr;
+        padding: 2rem 0;
+    }
+
+
+    /* Why choose us */
+
+    main > section:nth-child(4) ul {
         grid-template-columns: 1fr;
     }
-    .page .page-heading {
-        padding: 3rem 1rem;
+
+
+    /* Services page */
+
+    #hairstyles,
+    #nails {
+        grid-template-columns: 1fr;
     }
+
+    #hairstyles,
+    #nails,
+    #extras {
+        padding: 2rem 1rem;
+    }
+
+
+    /* Service images */
+
+    #hairstyles > img,
+    #nails > img,
+    #extras > img {
+        width: 8rem;
+        height: 8rem;
+    }
+
+
+    /* Extras */
+
+    #extras ul {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+
+    /* Contact map */
+
+    iframe {
+        min-height: 18rem;
+    }
+
+
+    /* Table */
+
+    table {
+        font-size: 0.85rem;
+    }
+
+    th,
+    td {
+        padding: 0.6rem;
+    }
+
+
+    /* Form */
+
+    fieldset {
+        padding: 1rem;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 0.7rem;
+        margin-right: 0;
+    }
+
+
+    /* Headings */
+
     h2 {
         font-size: 1.7rem;
     }
-    .contact-information,
-    .contact-form, {
-        padding: 1.3rem;
+
+    h3 {
+        font-size: 1.2rem;
     }
-   }
+
+
+    /* Footer */
+
+    footer {
+        padding: 2.5rem 1rem;
+    }
+}
+
+
+/* =========================================================
+   19. EXTRA SMALL DEVICES
+   Maximum 400px
+   ========================================================= */
+
+@media screen and (max-width: 400px) {
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    main > section:first-child h2 {
+        font-size: 1.7rem;
+    }
+
+    main > section {
+        padding: 1.5rem 1rem;
+    }
+
+    table {
+        font-size: 0.75rem;
+    }
+
+    th,
+    td {
+        padding: 0.4rem;
+    }
+}
 
