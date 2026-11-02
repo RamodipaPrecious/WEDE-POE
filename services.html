@@ -1,434 +1,415 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
 
+    <!-- Page information and SEO metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Page information and SEO metadata -->
+    <meta name="description"
+          content="Explore professional hair, braiding, manicure and pedicure services and prices at The Beauty Clinic in Polokwane.">
 
-<meta charset="UTF-8">
+    <meta name="keywords"
+          content="hair salon, nail services, braids, manicure, pedicure, Polokwane">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | The Beauty Clinic</title>
 
-<meta name="description"
-      content="Explore professional hair, braiding, manicure and pedicure services and prices at The Beauty Clinic in Polokwane.">
-
-<meta name="keywords"
-      content="hair salon, nail services, braids, manicure, pedicure, Polokwane">
-
-<title>Services | The Beauty Clinic</title>
-
-<link rel="stylesheet" href="css/style.css">
-```
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
-```
-<!-- HEADER -->
-
-<header>
-
-    <img src="images/logo.webp"
-         alt="The Beauty Clinic Logo"
-         width="150"
-         height="150"
-         style="border-radius: 50%;">
-
-    <h1>The Beauty Clinic</h1>
-
-    <p>Professional Hair and Nail Care</p>
-
-    <!-- Main navigation -->
-
-    <nav aria-label="Main Navigation">
-
-        <ul>
-
-            <li><a href="index.html">Home</a></li>
-
-            <li><a href="about.html">About Us</a></li>
-
-            <li><a href="services.html">Services</a></li>
-
-            <li><a href="contact.html">Contact Us</a></li>
-
-        </ul>
-
-    </nav>
-
-</header>
-
-<!-- MAIN CONTENT -->
-
-<main>
-
-    <!-- SERVICES INTRODUCTION -->
-
-    <section>
-
-        <h2>Our Services and Prices</h2>
-
-        <p>
-            At The Beauty Clinic, we provide professional
-            hairstyling and nail services at affordable prices.
-        </p>
-
-        <p>
-            Choose from a variety of hairstyles, nail services
-            and additional nail care services.
-        </p>
-
-    </section>
-
-    <!-- SERVICE SEARCH AND FILTER -->
-
-    <section id="service-search">
-
-        <h2>Find a Service</h2>
-
-        <label for="serviceSearch">Search for a service:</label>
-
-        <input
-            type="search"
-            id="serviceSearch"
-            placeholder="Search e.g. Braids or Manicure">
-
-        <label for="categoryFilter">Filter by category:</label>
-
-        <select id="categoryFilter">
-
-            <option value="all">All Services</option>
-
-            <option value="hair">Hair Services</option>
-
-            <option value="nails">Nail Services</option>
-
-            <option value="extras">Extras</option>
-
-        </select>
-
-        <p id="serviceCount" aria-live="polite">
-            Showing all services.
-        </p>
-
-        <p id="noServices" hidden>
-            No services match your search. Please try another search.
-        </p>
-
-    </section>
-
-    <!-- HAIRSTYLES -->
-
-    <section id="hairstyles">
-
-        <h2>Hairstyles</h2>
-
-        <img src="images/hair1.webp"
-             alt="Example of a professional hairstyle"
-             width="180"
-             height="180"
-             style="border-radius: 70%;">
-
-        <article class="service-card" data-category="hair">
-
-            <h3>Benny and Betty</h3>
-
-            <p>Price: <strong>R80</strong></p>
-
-        </article>
-
-        <article class="service-card" data-category="hair">
-
-            <h3>Ponytail</h3>
-
-            <p>Price: <strong>R150</strong></p>
-
-        </article>
-
-        <article class="service-card" data-category="hair">
-
-            <h3>Cornrows</h3>
-
-            <p>Straight: <strong>R100</strong></p>
-
-            <p>Any Style: <strong>R150</strong></p>
-
-        </article>
-
-        <article class="service-card" data-category="hair">
-
-            <h3>Straight Up and Back</h3>
-
-            <p>Price: <strong>R190</strong></p>
-
-        </article>
-
-        <article class="service-card" data-category="hair">
-
-            <h3>Braids</h3>
-
-            <img src="images/hair2.webp"
-                 alt="Example of braided hair"
-                 width="150"
-                 height="150"
-                 style="border-radius: 50%;">
-
-            <p>Short: <strong>R150</strong></p>
-
-            <p>Medium: <strong>R200</strong></p>
-
-            <p>Long: <strong>R250</strong></p>
-
-        </article>
-
-        <article class="service-card" data-category="hair">
-
-            <h3>Lemonade</h3>
-
-            <p>Price: <strong>R250</strong></p>
-
-        </article>
-
-        <article class="service-card" data-category="hair">
-
-            <h3>Boho Braids</h3>
-
-            <p>Price: <strong>R250</strong></p>
-
-        </article>
-
-    </section>
-
-    <!-- NAIL SERVICES -->
-
-    <section id="nails">
-
-        <h2>Nails</h2>
-
-        <!-- MANICURE -->
-
-        <article class="service-card" data-category="nails">
-
-            <h3>Manicure</h3>
-
-            <img src="images/nail1.webp"
-                 alt="Example of a manicure nail service"
-                 width="150"
-                 height="150"
-                 style="border-radius: 50%;">
-
-            <h4>Plain</h4>
-
-            <ul>
-
-                <li>Short – <strong>R80</strong></li>
-
-                <li>Medium – <strong>R100</strong></li>
-
-                <li>Long – <strong>R120</strong></li>
-
-            </ul>
-
-            <h4>Designs</h4>
-
-            <ul>
-
-                <li>Short – <strong>R100</strong></li>
-
-                <li>Medium – <strong>R120</strong></li>
-
-                <li>Long – <strong>R140</strong></li>
-
-            </ul>
-
-        </article>
-
-        <!-- PEDICURE -->
-
-        <article class="service-card" data-category="nails">
-
-            <h3>Pedicure</h3>
-
-            <img src="images/nail1.jpg"
-                 alt="Example of a pedicure nail service"
-                 width="150"
-                 height="150"
-                 style="border-radius: 50%;">
-
-            <ul>
-
-                <li>Plain – <strong>R80</strong></li>
-
-                <li>Design – <strong>R100</strong></li>
-
-            </ul>
-
-        </article>
-
-    </section>
-
-    <!-- EXTRAS -->
-
-    <section id="extras">
-
-        <h2>Extras</h2>
-
-        <img src="images/nail2.webp"
-             alt="Example of additional nail care"
+    <!-- HEADER -->
+    <header>
+
+        <img src="images/logo.webp"
+             alt="The Beauty Clinic Logo"
              width="150"
              height="150"
              style="border-radius: 50%;">
 
-        <article class="service-card" data-category="extras">
+        <h1>The Beauty Clinic</h1>
 
-            <h3>Soak Off</h3>
+        <p>Professional Hair and Nail Care</p>
 
-            <p>Price: <strong>R100</strong></p>
+        <!-- Main navigation -->
+        <nav aria-label="Main Navigation">
 
-        </article>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
 
-        <article class="service-card" data-category="extras">
+        </nav>
 
-            <h3>Buff and Shine</h3>
+    </header>
 
-            <p>Price: <strong>R80</strong></p>
+    <!-- MAIN CONTENT -->
+    <main>
 
-        </article>
+        <!-- SERVICES INTRODUCTION -->
+        <section>
 
-    </section>
-<!-- IMAGE GALLERY -->
+            <h2>Our Services and Prices</h2>
 
-<section id="gallery">
+            <p>
+                At The Beauty Clinic, we provide professional
+                hairstyling and nail services at affordable prices.
+            </p>
 
-    <h2>Our Hair and Nail Gallery</h2>
+            <p>
+                Choose from a variety of hairstyles, nail services
+                and additional nail care services.
+            </p>
+
+        </section>
+
+        <!-- SERVICE SEARCH, FILTER AND SORT -->
+        <section id="service-search">
+
+            <h2>Find a Service</h2>
+
+            <label for="serviceSearch">Search for a service:</label>
+
+            <input
+                type="search"
+                id="serviceSearch"
+                placeholder="Search e.g. Braids or Manicure">
+
+            <label for="categoryFilter">Filter by category:</label>
+
+            <select id="categoryFilter">
+
+                <option value="all">All Services</option>
+                <option value="hair">Hair Services</option>
+                <option value="nails">Nail Services</option>
+                <option value="extras">Extras</option>
+
+            </select>
+
+            <!-- PRICE SORTING -->
+            <label for="sortServices">Sort services by price:</label>
+
+            <select id="sortServices">
+
+                <option value="default">Default Order</option>
+                <option value="low-high">Price: Lowest to Highest</option>
+                <option value="high-low">Price: Highest to Lowest</option>
+
+            </select>
+
+            <p id="serviceCount" aria-live="polite">
+                Showing all services.
+            </p>
+
+            <p id="noServices" hidden>
+                No services match your search. Please try another search.
+            </p>
+
+        </section>
+
+        <!-- HAIRSTYLES -->
+        <section id="hairstyles">
+
+            <h2>Hairstyles</h2>
+
+            <img src="images/hair1.webp"
+                 alt="Example of a professional hairstyle"
+                 width="180"
+                 height="180"
+                 style="border-radius: 70%;">
+
+            <article class="service-card" data-category="hair" data-price="80">
+
+                <h3>Benny and Betty</h3>
+                <p>Price: <strong>R80</strong></p>
+
+            </article>
+
+            <article class="service-card" data-category="hair" data-price="150">
+
+                <h3>Ponytail</h3>
+                <p>Price: <strong>R150</strong></p>
+
+            </article>
+
+            <article class="service-card" data-category="hair" data-price="100">
+
+                <h3>Cornrows</h3>
+                <p>Straight: <strong>R100</strong></p>
+                <p>Any Style: <strong>R150</strong></p>
+
+            </article>
+
+            <article class="service-card" data-category="hair" data-price="190">
+
+                <h3>Straight Up and Back</h3>
+                <p>Price: <strong>R190</strong></p>
+
+            </article>
+
+            <article class="service-card" data-category="hair" data-price="150">
+
+                <h3>Braids</h3>
+
+                <img src="images/hair2.webp"
+                     alt="Example of braided hair"
+                     width="150"
+                     height="150"
+                     style="border-radius: 50%;">
+
+                <p>Short: <strong>R150</strong></p>
+                <p>Medium: <strong>R200</strong></p>
+                <p>Long: <strong>R250</strong></p>
+
+            </article>
+
+            <article class="service-card" data-category="hair" data-price="250">
+
+                <h3>Lemonade</h3>
+                <p>Price: <strong>R250</strong></p>
+
+            </article>
+
+            <article class="service-card" data-category="hair" data-price="250">
+
+                <h3>Boho Braids</h3>
+                <p>Price: <strong>R250</strong></p>
+
+            </article>
+
+        </section>
+
+        <!-- NAIL SERVICES -->
+        <section id="nails">
+
+            <h2>Nails</h2>
+
+            <!-- MANICURE -->
+            <article class="service-card" data-category="nails" data-price="80">
+
+                <h3>Manicure</h3>
+
+                <img src="images/nail1.webp"
+                     alt="Example of a manicure nail service"
+                     width="150"
+                     height="150"
+                     style="border-radius: 50%;">
+
+                <h4>Plain</h4>
+
+                <ul>
+                    <li>Short – <strong>R80</strong></li>
+                    <li>Medium – <strong>R100</strong></li>
+                    <li>Long – <strong>R120</strong></li>
+                </ul>
+
+                <h4>Designs</h4>
+
+                <ul>
+                    <li>Short – <strong>R100</strong></li>
+                    <li>Medium – <strong>R120</strong></li>
+                    <li>Long – <strong>R140</strong></li>
+                </ul>
+
+            </article>
+
+            <!-- PEDICURE -->
+            <article class="service-card" data-category="nails" data-price="80">
+
+                <h3>Pedicure</h3>
+
+                <img src="images/nail1.jpg"
+                     alt="Example of a pedicure nail service"
+                     width="150"
+                     height="150"
+                     style="border-radius: 50%;">
+
+                <ul>
+                    <li>Plain – <strong>R80</strong></li>
+                    <li>Design – <strong>R100</strong></li>
+                </ul>
+
+            </article>
+
+        </section>
+
+        <!-- EXTRAS -->
+        <section id="extras">
+
+            <h2>Extras</h2>
+
+            <img src="images/nail2.webp"
+                 alt="Example of additional nail care"
+                 width="150"
+                 height="150"
+                 style="border-radius: 50%;">
+
+            <article class="service-card" data-category="extras" data-price="100">
+
+                <h3>Soak Off</h3>
+                <p>Price: <strong>R100</strong></p>
+
+            </article>
+
+            <article class="service-card" data-category="extras" data-price="80">
+
+                <h3>Buff and Shine</h3>
+                <p>Price: <strong>R80</strong></p>
+
+            </article>
+
+        </section>
+        <!-- DYNAMIC HAIR AND NAIL CARE TIPS -->
+
+<section id="dynamic-tips">
+
+    <h2>Hair and Nail Care Tips</h2>
 
     <p>
-        Explore examples of our hair and nail services.
-        Click on an image to view it in a larger size.
+        Discover useful tips to help you maintain
+        healthy hair and beautiful nails.
     </p>
 
-    <div class="gallery-container">
+    <div id="tipsContainer" aria-live="polite">
 
-        <img src="images/hair1.webp"
-             alt="Professional hairstyle example"
-             class="gallery-image"
-             tabindex="0">
-
-        <img src="images/hair2.webp"
-             alt="Braided hairstyle example"
-             class="gallery-image"
-             tabindex="0">
-
-        <img src="images/nail1.webp"
-             alt="Manicure nail design example"
-             class="gallery-image"
-             tabindex="0">
-
-        <img src="images/nail2.webp"
-             alt="Nail care example"
-             class="gallery-image"
-             tabindex="0">
+        <p>Loading hair and nail care tips...</p>
 
     </div>
 
 </section>
 
-<!-- LIGHTBOX -->
+        <!-- IMAGE GALLERY -->
+        <section id="gallery">
 
-<dialog id="imageLightbox">
+            <h2>Our Hair and Nail Gallery</h2>
 
-    <button type="button"
-            id="closeLightbox"
-            aria-label="Close image">
-        &times;
-    </button>
+            <p>
+                Explore examples of our hair and nail services.
+                Click on an image to view it in a larger size.
+            </p>
 
-    <img id="lightboxImage" src="" alt="">
+            <div class="gallery-container">
 
-    <p id="lightboxCaption"></p>
+                <img src="images/hair1.webp"
+                     alt="Professional hairstyle example"
+                     class="gallery-image"
+                     tabindex="0">
 
-</dialog>
-    <!-- IMPORTANT INFORMATION -->
+                <img src="images/hair2.webp"
+                     alt="Braided hairstyle example"
+                     class="gallery-image"
+                     tabindex="0">
 
-    <aside>
+                <img src="images/nail1.webp"
+                     alt="Manicure nail design example"
+                     class="gallery-image"
+                     tabindex="0">
 
-        <h2>Important Information</h2>
+                <img src="images/nail2.webp"
+                     alt="Nail care example"
+                     class="gallery-image"
+                     tabindex="0">
+
+            </div>
+
+        </section>
+
+        <!-- LIGHTBOX -->
+        <dialog id="imageLightbox">
+
+            <button type="button"
+                    id="closeLightbox"
+                    aria-label="Close image">
+                &times;
+            </button>
+
+            <img id="lightboxImage" src="" alt="">
+
+            <p id="lightboxCaption"></p>
+
+        </dialog>
+
+        <!-- IMPORTANT INFORMATION -->
+        <aside>
+
+            <h2>Important Information</h2>
+
+            <p>
+                Prices may vary depending on the hairstyle,
+                length of hair, nail design and additional
+                services requested.
+            </p>
+
+            <p>
+                Please contact The Beauty Clinic if you require
+                more information about any of our services.
+            </p>
+
+        </aside>
+
+        <!-- CONTACT SECTION -->
+        <section>
+
+            <h2>Contact Us</h2>
+
+            <p>
+                For more information about our services and
+                prices, please contact The Beauty Clinic.
+            </p>
+
+            <p>
+                <a href="contact.html">
+                    Contact The Beauty Clinic
+                </a>
+            </p>
+
+            <p>
+                <a href="enquiry.html">
+                    Make a Service Enquiry
+                </a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h2>The Beauty Clinic</h2>
 
         <p>
-            Prices may vary depending on the hairstyle,
-            length of hair, nail design and additional
-            services requested.
+            Professional hair and nail care with a personal touch.
         </p>
+
+        <nav aria-label="Footer Navigation">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+        </nav>
 
         <p>
-            Please contact The Beauty Clinic if you require
-            more information about any of our services.
+            &copy; 2026 The Beauty Clinic.
+            All rights reserved.
         </p>
 
-    </aside>
+    </footer>
 
-    <!-- CONTACT SECTION -->
-
-    <section>
-
-        <h2>Contact Us</h2>
-
-        <p>
-            For more information about our services and
-            prices, please contact The Beauty Clinic.
-        </p>
-
-        <p>
-            <a href="contact.html">
-                Contact The Beauty Clinic
-            </a>
-        </p>
-
-    </section>
-
-</main>
-
-<!-- FOOTER -->
-
-<footer>
-
-    <h2>The Beauty Clinic</h2>
-
-    <p>
-        Professional hair and nail care with a personal touch.
-    </p>
-
-    <nav aria-label="Footer Navigation">
-
-        <ul>
-
-            <li><a href="index.html">Home</a></li>
-
-            <li><a href="about.html">About Us</a></li>
-
-            <li><a href="services.html">Services</a></li>
-
-            <li><a href="contact.html">Contact Us</a></li>
-
-        </ul>
-
-    </nav>
-
-    <p>
-        &copy; 2026 The Beauty Clinic.
-        All rights reserved.
-    </p>
-
-</footer>
-
-<!-- JavaScript file -->
-
-<script src="js/script.js"></script>
-
+    <!-- JavaScript file -->
+    <script src="js/script.js"></script>
 
 </body>
 
 </html>
+

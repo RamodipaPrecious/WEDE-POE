@@ -1,0 +1,9 @@
+# Allow search engines to access the website
+
+User-agent: *
+
+Allow: /
+
+# Sitemap location
+
+Sitemap: https://YOUR-WEBSITE-URL/sitemap.xml

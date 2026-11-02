@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+<!-- Page metadata and SEO -->
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+      content="Send a hair or nail service enquiry to The Beauty Clinic in Polokwane, Limpopo. Explore hairstyles, braids, manicures, pedicures and estimated prices.">
+
+<meta name="keywords"
+      content="hair salon Polokwane, nail salon Polokwane, hair service enquiry, nail service enquiry, braids, manicure, pedicure">
+
+<meta name="author" content="The Beauty Clinic">
+
+<title>Make an Enquiry | The Beauty Clinic Polokwane</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+    <img src="images/logo.webp"
+         alt="The Beauty Clinic professional hair and nail salon logo"
+         width="150"
+         height="150"
+         style="border-radius: 50%;">
+
+    <h1>The Beauty Clinic</h1>
+
+    <p>Professional Hair and Nail Care</p>
+
+    <!-- Main navigation -->
+    <nav aria-label="Main Navigation">
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="about.html">About Us</a></li>
+
+            <li><a href="services.html">Services</a></li>
+
+            <li><a href="contact.html">Contact Us</a></li>
+
+            <li><a href="enquiry.html" aria-current="page">Make an Enquiry</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<!-- MAIN CONTENT -->
+<main>
+
+    <!-- ENQUIRY INTRODUCTION -->
+    <section>
+
+        <h2>Make an Enquiry</h2>
+
+        <p>
+            Welcome to The Beauty Clinic in Polokwane, Limpopo.
+            Complete the form below to enquire about our
+            professional hair and nail services.
+        </p>
+
+        <p>
+            You can explore our available services and prices
+            before submitting your enquiry.
+        </p>
+
+        <p>
+            <a href="services.html">View our services and prices</a>
+        </p>
+
+    </section>
+
+    <!-- ENQUIRY FORM -->
+    <section>
+
+        <h2>Customer Information</h2>
+
+        <form id="enquiryForm">
+
+            <fieldset>
+
+                <legend>Your Details</legend>
+
+                <p>
+
+                    <label for="customerName">Full Name:</label><br>
+
+                    <input
+                        type="text"
+                        id="customerName"
+                        name="customerName"
+                        required
+                        minlength="2"
+                        maxlength="60"
+                        placeholder="Enter your full name">
+
+                </p>
+
+                <p>
+
+                    <label for="customerEmail">Email Address:</label><br>
+
+                    <input
+                        type="email"
+                        id="customerEmail"
+                        name="customerEmail"
+                        required
+                        placeholder="Enter your email address">
+
+                </p>
+
+                <p>
+
+                    <label for="customerPhone">Phone Number:</label><br>
+
+                    <input
+                        type="tel"
+                        id="customerPhone"
+                        name="customerPhone"
+                        pattern="[+]?[0-9 ()-]{9,20}"
+                        title="Enter a valid phone number."
+                        placeholder="+27 69 138 6923">
+
+                </p>
+
+            </fieldset>
+
+            <!-- SERVICE SELECTION -->
+            <fieldset>
+
+                <legend>Select Your Service</legend>
+
+                <p>
+
+                    <label for="selectedService">
+                        Choose a hair or nail service:
+                    </label><br>
+
+                    <select id="selectedService"
+                            name="selectedService"
+                            required>
+
+                        <option value="">-- Select a Service --</option>
+
+                        <optgroup label="Hair Services">
+
+                            <option value="Benny and Betty" data-price="80">
+                                Benny and Betty - R80
+                            </option>
+
+                            <option value="Ponytail" data-price="150">
+                                Ponytail - R150
+                            </option>
+
+                            <option value="Cornrows Straight" data-price="100">
+                                Cornrows Straight - R100
+                            </option>
+
+                            <option value="Cornrows Any Style" data-price="150">
+                                Cornrows Any Style - R150
+                            </option>
+
+                            <option value="Straight Up and Back" data-price="190">
+                                Straight Up and Back - R190
+                            </option>
+
+                            <option value="Braids Short" data-price="150">
+                                Braids Short - R150
+                            </option>
+
+                            <option value="Braids Medium" data-price="200">
+                                Braids Medium - R200
+                            </option>
+
+                            <option value="Braids Long" data-price="250">
+                                Braids Long - R250
+                            </option>
+
+                            <option value="Lemonade" data-price="250">
+                                Lemonade - R250
+                            </option>
+
+                            <option value="Boho Braids" data-price="250">
+                                Boho Braids - R250
+                            </option>
+
+                        </optgroup>
+
+                        <optgroup label="Nail Services">
+
+                            <option value="Manicure Plain Short" data-price="80">
+                                Manicure Plain Short - R80
+                            </option>
+
+                            <option value="Manicure Plain Medium" data-price="100">
+                                Manicure Plain Medium - R100
+                            </option>
+
+                            <option value="Manicure Plain Long" data-price="120">
+                                Manicure Plain Long - R120
+                            </option>
+
+                            <option value="Manicure Designs Short" data-price="100">
+                                Manicure Designs Short - R100
+                            </option>
+
+                            <option value="Manicure Designs Medium" data-price="120">
+                                Manicure Designs Medium - R120
+                            </option>
+
+                            <option value="Manicure Designs Long" data-price="140">
+                                Manicure Designs Long - R140
+                            </option>
+
+                            <option value="Pedicure Plain" data-price="80">
+                                Pedicure Plain - R80
+                            </option>
+
+                            <option value="Pedicure Design" data-price="100">
+                                Pedicure Design - R100
+                            </option>
+
+                        </optgroup>
+
+                        <optgroup label="Extras">
+
+                            <option value="Soak Off" data-price="100">
+                                Soak Off - R100
+                            </option>
+
+                            <option value="Buff and Shine" data-price="80">
+                                Buff and Shine - R80
+                            </option>
+
+                        </optgroup>
+
+                    </select>
+
+                </p>
+
+                <!-- PRICE ESTIMATE -->
+                <p>
+
+                    <strong>Estimated Price:</strong>
+
+                    <span id="estimatedPrice" aria-live="polite">
+                        Please select a service.
+                    </span>
+
+                </p>
+
+                <p>
+                    The displayed price is an estimate.
+                    Final prices may vary depending on the
+                    service requirements.
+                </p>
+
+            </fieldset>
+
+            <!-- ADDITIONAL INFORMATION -->
+            <fieldset>
+
+                <legend>Additional Information</legend>
+
+                <p>
+
+                    <label for="customerMessage">
+                        Tell us more about your enquiry:
+                    </label><br>
+
+                    <textarea
+                        id="customerMessage"
+                        name="customerMessage"
+                        rows="6"
+                        maxlength="1000"
+                        placeholder="Enter any additional information"></textarea>
+
+                </p>
+
+            </fieldset>
+
+            <p id="enquiryMessage" aria-live="polite"></p>
+
+            <!-- FORM BUTTONS -->
+            <p>
+
+                <button type="button" id="submitEnquiry">
+                    Submit Enquiry
+                </button>
+
+                <button type="reset">
+                    Clear Form
+                </button>
+
+            </p>
+
+        </form>
+
+    </section>
+
+    <!-- ADDITIONAL CONTACT INFORMATION -->
+    <section>
+
+        <h2>Need More Information?</h2>
+
+        <p>
+            If you have questions about our hair and nail
+            services, you can contact The Beauty Clinic
+            directly.
+        </p>
+
+        <p>
+            <a href="contact.html">View our contact details</a>
+        </p>
+
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+
+    <h2>The Beauty Clinic</h2>
+
+    <p>
+        Professional hair and nail care with a personal touch.
+    </p>
+
+    <nav aria-label="Footer Navigation">
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="about.html">About Us</a></li>
+
+            <li><a href="services.html">Services</a></li>
+
+            <li><a href="contact.html">Contact Us</a></li>
+
+            <li><a href="enquiry.html">Make an Enquiry</a></li>
+
+        </ul>
+
+    </nav>
+
+    <p>
+        &copy; 2026 The Beauty Clinic.
+        All rights reserved.
+    </p>
+
+</footer>
+
+<!-- JavaScript functionality -->
+<script src="js/script.js"></script>
+
+
+</body>
+
+</html>
