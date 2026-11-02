@@ -6,4 +6,4 @@ Allow: /
 
 # Sitemap location
 
-Sitemap: https://YOUR-WEBSITE-URL/sitemap.xml
+Sitemap: https://ramodipaprecious.github.io/WEDE-POE/sitemap.xml
