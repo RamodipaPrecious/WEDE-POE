@@ -1,441 +1,382 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
 
-    <!--
-        The head section contains information about the webpage.
-        The meta tags help the browser understand the document
-        and improve how the page is displayed.
-    -->
 
-    <meta charset="UTF-8">
+<!-- Page information and SEO metadata -->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
 
-    <meta name="description"
-          content="View the hair and nail services and prices offered by The Beauty Clinic.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Services | The Beauty Clinic</title>
+<meta name="description"
+      content="Explore professional hair, braiding, manicure and pedicure services and prices at The Beauty Clinic in Polokwane.">
 
-    <link rel="stylesheet" href="css/style.css">
+<meta name="keywords"
+      content="hair salon, nail services, braids, manicure, pedicure, Polokwane">
+
+<title>Services | The Beauty Clinic</title>
+
+<link rel="stylesheet" href="css/style.css">
+```
 
 </head>
 
-
 <body>
 
-    <!--
-        HEADER:
-        Contains the salon logo, salon name, tagline and
-        navigation menu.
-    -->
+```
+<!-- HEADER -->
 
-    <header>
+<header>
 
-        <!-- Salon Logo -->
+    <img src="images/logo.webp"
+         alt="The Beauty Clinic Logo"
+         width="150"
+         height="150"
+         style="border-radius: 50%;">
 
-        <img src="images/logo.webp"
-             alt="The Beauty Clinic Logo"
-             width="150"
-             height="150"
-             style="border-radius: 50%;">
+    <h1>The Beauty Clinic</h1>
 
-        <h1>The Beauty Clinic</h1>
+    <p>Professional Hair and Nail Care</p>
 
-        <p>Professional Hair and Nail Care</p>
+    <!-- Main navigation -->
 
+    <nav aria-label="Main Navigation">
 
-        <!--
-            NAVIGATION:
-            Allows visitors to move between the different
-            pages of the website.
-        -->
+        <ul>
 
-        <nav aria-label="Main Navigation">
+            <li><a href="index.html">Home</a></li>
 
-            <ul>
+            <li><a href="about.html">About Us</a></li>
 
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
+            <li><a href="services.html">Services</a></li>
 
-                <li>
-                    <a href="about.html">About Us</a>
-                </li>
+            <li><a href="contact.html">Contact Us</a></li>
 
-                <li>
-                    <a href="services.html">Services</a>
-                </li>
+        </ul>
 
-                <li>
-                    <a href="contact.html">Contact Us</a>
-                </li>
+    </nav>
 
-            </ul>
+</header>
 
-        </nav>
+<!-- MAIN CONTENT -->
 
-    </header>
+<main>
 
+    <!-- SERVICES INTRODUCTION -->
 
-    <!--
-        MAIN:
-        Contains all the main services and prices offered
-        by The Beauty Clinic.
-    -->
+    <section>
 
-    <main>
+        <h2>Our Services and Prices</h2>
 
-        <!-- SERVICES INTRODUCTION -->
+        <p>
+            At The Beauty Clinic, we provide professional
+            hairstyling and nail services at affordable prices.
+        </p>
 
-        <section>
+        <p>
+            Choose from a variety of hairstyles, nail services
+            and additional nail care services.
+        </p>
 
-            <h2>Our Services and Prices</h2>
+    </section>
 
-            <p>
-                At The Beauty Clinic, we provide professional
-                hairstyling and nail services at affordable prices.
-            </p>
+    <!-- SERVICE SEARCH AND FILTER -->
 
-            <p>
-                Choose from a variety of hairstyles, nail services
-                and additional nail care services.
-            </p>
+    <section id="service-search">
 
-        </section>
+        <h2>Find a Service</h2>
 
+        <label for="serviceSearch">Search for a service:</label>
 
-        <!--
-            HAIRSTYLES:
-            This section contains all the hairstyles and
-            their corresponding prices.
-        -->
+        <input
+            type="search"
+            id="serviceSearch"
+            placeholder="Search e.g. Braids or Manicure">
 
-        <section id="hairstyles">
-            <img src="images/hair1.webp"
-             alt="The Beauty Clinic Logo"
+        <label for="categoryFilter">Filter by category:</label>
+
+        <select id="categoryFilter">
+
+            <option value="all">All Services</option>
+
+            <option value="hair">Hair Services</option>
+
+            <option value="nails">Nail Services</option>
+
+            <option value="extras">Extras</option>
+
+        </select>
+
+        <p id="serviceCount" aria-live="polite">
+            Showing all services.
+        </p>
+
+        <p id="noServices" hidden>
+            No services match your search. Please try another search.
+        </p>
+
+    </section>
+
+    <!-- HAIRSTYLES -->
+
+    <section id="hairstyles">
+
+        <h2>Hairstyles</h2>
+
+        <img src="images/hair1.webp"
+             alt="Example of a professional hairstyle"
              width="180"
              height="180"
              style="border-radius: 70%;">
 
+        <article class="service-card" data-category="hair">
 
-            <h2>Hairstyles</h2>
+            <h3>Benny and Betty</h3>
 
+            <p>Price: <strong>R80</strong></p>
 
-            <article>
+        </article>
 
-                <h3>Benny and Betty</h3>
+        <article class="service-card" data-category="hair">
 
-                <p>
-                    Price: <strong>R80</strong>
-                </p>
+            <h3>Ponytail</h3>
 
-            </article>
+            <p>Price: <strong>R150</strong></p>
 
+        </article>
 
-            <article>
+        <article class="service-card" data-category="hair">
 
-                <h3>Ponytail</h3>
+            <h3>Cornrows</h3>
 
-                <p>
-                    Price: <strong>R150</strong>
-                </p>
+            <p>Straight: <strong>R100</strong></p>
 
-            </article>
+            <p>Any Style: <strong>R150</strong></p>
 
+        </article>
 
-            <article>
+        <article class="service-card" data-category="hair">
 
-                <h3>Cornrows</h3>
+            <h3>Straight Up and Back</h3>
 
-                <p>
-                    Straight: <strong>R100</strong>
-                </p>
+            <p>Price: <strong>R190</strong></p>
 
-                <p>
-                    Any Style: <strong>R150</strong>
-                </p>
+        </article>
 
-            </article>
+        <article class="service-card" data-category="hair">
 
+            <h3>Braids</h3>
 
-            <article>
+            <img src="images/hair2.webp"
+                 alt="Example of braided hair"
+                 width="150"
+                 height="150"
+                 style="border-radius: 50%;">
 
-                <h3>Straight Up and Back</h3>
+            <p>Short: <strong>R150</strong></p>
 
-                <p>
-                    Price: <strong>R190</strong>
-                </p>
+            <p>Medium: <strong>R200</strong></p>
 
-            </article>
+            <p>Long: <strong>R250</strong></p>
 
+        </article>
 
-            <article>
+        <article class="service-card" data-category="hair">
 
-                <h3>Braids</h3>
-                <img src="images/hair2.webp"
-             alt="The Beauty Clinic Logo"
-             width="150"
-             height="150"
-             style="border-radius: 50%;">
+            <h3>Lemonade</h3>
 
+            <p>Price: <strong>R250</strong></p>
 
-                <p>
-                    Short: <strong>R150</strong>
-                </p>
+        </article>
 
-                <p>
-                    Medium: <strong>R200</strong>
-                </p>
+        <article class="service-card" data-category="hair">
 
-                <p>
-                    Long: <strong>R250</strong>
-                </p>
+            <h3>Boho Braids</h3>
 
-            </article>
+            <p>Price: <strong>R250</strong></p>
 
+        </article>
 
-            <article>
+    </section>
 
-                <h3>Lemonade</h3>
+    <!-- NAIL SERVICES -->
 
-                <p>
-                    Price: <strong>R250</strong>
-                </p>
+    <section id="nails">
 
-            </article>
+        <h2>Nails</h2>
 
+        <!-- MANICURE -->
 
-            <article>
+        <article class="service-card" data-category="nails">
 
-                <h3>Boho Braids</h3>
+            <h3>Manicure</h3>
 
-                <p>
-                    Price: <strong>R250</strong>
-                </p>
+            <img src="images/nail1.webp"
+                 alt="Example of a manicure nail service"
+                 width="150"
+                 height="150"
+                 style="border-radius: 50%;">
 
-            </article>
-
-        </section>
-
-
-        <!--
-            NAIL SERVICES:
-            This section contains manicure and pedicure
-            services and their prices.
-        -->
-
-        <section id="nails">
-
-            <h2>Nails</h2>
-
-
-            <!-- MANICURE -->
-
-            <article>
-
-                <h3>Manicure</h3>
-                <img src="images/nail1.webp"
-             alt="The Beauty Clinic Logo"
-             width="150"
-             height="150"
-             style="border-radius: 50%;">
-
-
-
-                <h4>Plain</h4>
-
-                <ul>
-
-                    <li>
-                        Short – <strong>R80</strong>
-                    </li>
-
-                    <li>
-                        Medium – <strong>R100</strong>
-                    </li>
-
-                    <li>
-                        Long – <strong>R120</strong>
-                    </li>
-
-                </ul>
-
-
-                <h4>Designs</h4>
-
-                <ul>
-
-                    <li>
-                        Short – <strong>R100</strong>
-                    </li>
-
-                    <li>
-                        Medium – <strong>R120</strong>
-                    </li>
-
-                    <li>
-                        Long – <strong>R140</strong>
-                    </li>
-
-                </ul>
-
-            </article>
-
-
-            <!-- PEDICURE -->
-
-            <article>
-
-                <h3>Pedicure</h3>
-                <img src="images/nail1.jpg"
-             alt="The Beauty Clinic Logo"
-             width="150"
-             height="150"
-             style="border-radius: 50%;">
-
-
-                <ul>
-
-                    <li>
-                        Plain – <strong>R80</strong>
-                    </li>
-
-                    <li>
-                        Design – <strong>R100</strong>
-                    </li>
-
-                </ul>
-
-            </article>
-
-        </section>
-
-
-        <!--
-            EXTRAS:
-            Additional nail services available at the salon.
-        -->
-
-        <section id="extras">
-
-            <h2>Extras</h2>
-            <img src="images/nail2.webp"
-             alt="The Beauty Clinic Logo"
-             width="150"
-             height="150"
-             style="border-radius: 50%;">
-
+            <h4>Plain</h4>
 
             <ul>
 
-                <li>
-                    Soak Off – <strong>R100</strong>
-                </li>
+                <li>Short – <strong>R80</strong></li>
 
-                <li>
-                    Buff and Shine – <strong>R80</strong>
-                </li>
+                <li>Medium – <strong>R100</strong></li>
+
+                <li>Long – <strong>R120</strong></li>
 
             </ul>
 
-        </section>
-
-
-        <!--
-            SERVICE INFORMATION:
-            Provides additional information about the prices.
-        -->
-
-        <aside>
-
-            <h2>Important Information</h2>
-
-            <p>
-                Prices may vary depending on the hairstyle,
-                length of hair, nail design and additional
-                services requested.
-            </p>
-
-            <p>
-                Please contact The Beauty Clinic if you require
-                more information about any of our services.
-            </p>
-
-        </aside>
-
-
-        <!-- CONTACT SECTION -->
-
-        <section>
-
-            <h2>Contact Us</h2>
-
-            <p>
-                For more information about our services and
-                prices, please contact The Beauty Clinic.
-            </p>
-
-            <p>
-                <a href="contact.html">
-                    Contact The Beauty Clinic
-                </a>
-            </p>
-
-        </section>
-
-    </main>
-
-
-    <!--
-        FOOTER:
-        Contains the salon name, navigation and copyright
-        information.
-    -->
-
-    <footer>
-
-        <h2>The Beauty Clinic</h2>
-
-        <p>
-            Professional hair and nail care with a personal touch.
-        </p>
-
-
-        <!-- Footer Navigation -->
-
-        <nav aria-label="Footer Navigation">
+            <h4>Designs</h4>
 
             <ul>
 
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
+                <li>Short – <strong>R100</strong></li>
 
-                <li>
-                    <a href="about.html">About Us</a>
-                </li>
+                <li>Medium – <strong>R120</strong></li>
 
-                <li>
-                    <a href="services.html">Services</a>
-                </li>
-
-                <li>
-                    <a href="contact.html">Contact Us</a>
-                </li>
+                <li>Long – <strong>R140</strong></li>
 
             </ul>
 
-        </nav>
+        </article>
 
+        <!-- PEDICURE -->
+
+        <article class="service-card" data-category="nails">
+
+            <h3>Pedicure</h3>
+
+            <img src="images/nail1.jpg"
+                 alt="Example of a pedicure nail service"
+                 width="150"
+                 height="150"
+                 style="border-radius: 50%;">
+
+            <ul>
+
+                <li>Plain – <strong>R80</strong></li>
+
+                <li>Design – <strong>R100</strong></li>
+
+            </ul>
+
+        </article>
+
+    </section>
+
+    <!-- EXTRAS -->
+
+    <section id="extras">
+
+        <h2>Extras</h2>
+
+        <img src="images/nail2.webp"
+             alt="Example of additional nail care"
+             width="150"
+             height="150"
+             style="border-radius: 50%;">
+
+        <article class="service-card" data-category="extras">
+
+            <h3>Soak Off</h3>
+
+            <p>Price: <strong>R100</strong></p>
+
+        </article>
+
+        <article class="service-card" data-category="extras">
+
+            <h3>Buff and Shine</h3>
+
+            <p>Price: <strong>R80</strong></p>
+
+        </article>
+
+    </section>
+
+    <!-- IMPORTANT INFORMATION -->
+
+    <aside>
+
+        <h2>Important Information</h2>
 
         <p>
-            &copy; 2026 The Beauty Clinic.
-            All rights reserved.
+            Prices may vary depending on the hairstyle,
+            length of hair, nail design and additional
+            services requested.
         </p>
 
-    </footer>
+        <p>
+            Please contact The Beauty Clinic if you require
+            more information about any of our services.
+        </p>
+
+    </aside>
+
+    <!-- CONTACT SECTION -->
+
+    <section>
+
+        <h2>Contact Us</h2>
+
+        <p>
+            For more information about our services and
+            prices, please contact The Beauty Clinic.
+        </p>
+
+        <p>
+            <a href="contact.html">
+                Contact The Beauty Clinic
+            </a>
+        </p>
+
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h2>The Beauty Clinic</h2>
+
+    <p>
+        Professional hair and nail care with a personal touch.
+    </p>
+
+    <nav aria-label="Footer Navigation">
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="about.html">About Us</a></li>
+
+            <li><a href="services.html">Services</a></li>
+
+            <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>
+
+    </nav>
+
+    <p>
+        &copy; 2026 The Beauty Clinic.
+        All rights reserved.
+    </p>
+
+</footer>
+
+<!-- JavaScript file -->
+
+<script src="js/script.js"></script>
+
 
 </body>
 
