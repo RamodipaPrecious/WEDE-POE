@@ -112,5 +112,76 @@ if (searchInput && categoryFilter) {
 
 }
 
+// IMAGE GALLERY AND LIGHTBOX
 
+const galleryImages = document.querySelectorAll(".gallery-image");
+
+const lightbox = document.getElementById("imageLightbox");
+
+const lightboxImage = document.getElementById("lightboxImage");
+
+const lightboxCaption = document.getElementById("lightboxCaption");
+
+const closeLightbox = document.getElementById("closeLightbox");
+
+
+if (lightbox && lightboxImage && closeLightbox) {
+
+    // Open image when clicked.
+
+    galleryImages.forEach(function (image) {
+
+        function openImage() {
+
+            lightboxImage.src = image.src;
+
+            lightboxImage.alt = image.alt;
+
+            lightboxCaption.textContent = image.alt;
+
+            lightbox.showModal();
+
+        }
+
+        image.addEventListener("click", openImage);
+
+        // Allow keyboard users to open images.
+
+        image.addEventListener("keydown", function (event) {
+
+            if (event.key === "Enter" || event.key === " ") {
+
+                event.preventDefault();
+
+                openImage();
+
+            }
+
+        });
+
+    });
+
+
+    // Close image using the close button.
+
+    closeLightbox.addEventListener("click", function () {
+
+        lightbox.close();
+
+    });
+
+
+    // Close when clicking outside the image.
+
+    lightbox.addEventListener("click", function (event) {
+
+        if (event.target === lightbox) {
+
+            lightbox.close();
+
+        }
+
+    });
+
+}
 });
